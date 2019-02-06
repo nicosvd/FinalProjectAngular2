@@ -1,0 +1,9 @@
+<h1>Customers</h1>
+ 
+<div *ngFor="let computer of computers | async" style="width: 300px;">
+  <app-single-computer [computer]='computer'></app-single-computer>
+</div>
+
+<div>
+  <button type="button" class="button btn-success" (click)='reloadData()'>Load All Computers</button>
+</div>
